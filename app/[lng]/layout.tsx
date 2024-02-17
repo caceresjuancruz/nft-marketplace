@@ -4,6 +4,13 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Providers } from './providers'
+import { dir } from 'i18next'
+import { languages } from '../i18n/settings'
+import { LayoutProps } from '@/types'
+
+export async function generateStaticParams() {
+  return languages.map(lng => ({ lng }))
+}
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -48,13 +55,12 @@ export const metadata: Metadata = {
   ]
 }
 
-export default function RootLayout({
-  children
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default async function RootLayout({
+  children,
+  params: { lng }
+}: LayoutProps) {
   return (
-    <html lang='en'>
+    <html lang={lng} dir={dir(lng)}>
       <body className={poppins.className}>
         <Providers>{children}</Providers>
         <Analytics />

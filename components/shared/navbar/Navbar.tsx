@@ -3,11 +3,13 @@ import { sidebarLinks } from '@/constants'
 import { Logo, MobileNav, CreateButton } from '../../index'
 import Link from 'next/link'
 
-import { useLanguage } from '@/context/LanguageProvider'
 import { useTranslation } from '@/app/i18n/client'
 
-const Navbar = () => {
-  const { lng } = useLanguage()
+interface NavbarProps {
+  lng: string
+}
+
+const Navbar = ({ lng }: NavbarProps) => {
   const { t } = useTranslation(lng, 'translations')
   return (
     <nav className='flexBetween fixed z-10 w-full flex-row gap-4 p-4'>
@@ -18,12 +20,13 @@ const Navbar = () => {
             <Link
               key={item.route}
               href={item.route}
+              aria-label={item.label}
               className='cursor-pointer text-3xl font-thin uppercase text-slate-300 hover:text-white'
             >
               {t(`${item.label}`)}
             </Link>
           ))}
-          <CreateButton />
+          <CreateButton lng={lng} />
         </div>
         <MobileNav />
       </div>

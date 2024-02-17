@@ -1,4 +1,5 @@
 'use client'
+import { fallbackLng } from '@/app/i18n/settings'
 import React, { createContext, useEffect, useContext, useState } from 'react'
 
 interface LanguageContextType {
@@ -11,7 +12,7 @@ export const LanguageContext = createContext<LanguageContextType | undefined>(
 )
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lng, setLng] = useState<string>('es')
+  const [lng, setLng] = useState<string>(fallbackLng || 'en')
 
   const handleThemeChange = () => {
     const html = document.querySelector('html')

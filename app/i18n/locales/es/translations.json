@@ -2,5 +2,15 @@
   "create": "Crear",
   "explore": "Explorar",
   "listed": "Listado",
-  "owned": "Propio"
+  "owned": "Propio",
+  "rightsReserved": "Todos los derechos reservados",
+  "getLatestUpdates": "Obtener las últimas actualizaciones",
+  "subscribe": "Suscribirse",
+  "support": "Soporte",
+  "howItWorks": "Cómo Funciona",
+  "contactUs": "Contáctenos",
+  "helpCenter": "Centro de Ayuda",
+  "termsOfService": "Términos de Servicio",
+  "legal": "Legal",
+  "privacyPolicy": "Política de Privacidad"
 }

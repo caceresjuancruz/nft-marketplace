@@ -1,10 +1,12 @@
 'use client'
 import { useTranslation } from '@/app/i18n/client'
-import { useLanguage } from '@/context/LanguageProvider'
 import Link from 'next/link'
 
-const CreateButton = () => {
-  const { lng } = useLanguage()
+interface CreateButtonProps {
+  lng: string
+}
+
+const CreateButton = ({ lng }: CreateButtonProps) => {
   const { t } = useTranslation(lng, 'translations')
   return (
     <Link href='/nft/create' className=''>

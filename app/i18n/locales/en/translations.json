@@ -2,5 +2,15 @@
   "create": "Create",
   "explore": "Explore",
   "listed": "Listed",
-  "owned": "Owned"
+  "owned": "Owned",
+  "rightsReserved": "All rights reserved",
+  "getLatestUpdates": "Get the latest updates",
+  "subscribe": "Subscribe",
+  "support": "Support",
+  "howItWorks": "How it Works",
+  "contactUs": "Contact Us",
+  "helpCenter": "Help Center",
+  "termsOfService": "Terms of Service",
+  "legal": "Legal",
+  "privacyPolicy": "Privacy Policy"
 }

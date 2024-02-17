@@ -1,17 +1,17 @@
+import { LayoutProps } from '@/types'
 import { Navbar, Footer } from '../../../components/index'
 import { Toaster } from '@/components/ui/toaster'
 
-export default async function RootLayout({
-  children
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default async function MainLayout({
+  children,
+  params: { lng }
+}: LayoutProps) {
   return (
-    <div className='bg-main-background min-h-screen bg-cover bg-fixed bg-center bg-no-repeat '>
-      <div className='text-bone min-h-screen backdrop-blur-md'>
-        <Navbar />
+    <div className='min-h-screen bg-main-background bg-cover bg-fixed bg-center bg-no-repeat '>
+      <div className='min-h-screen text-bone backdrop-blur-md'>
+        <Navbar lng={lng} />
         {children}
-        <Footer />
+        <Footer lng={lng} />
       </div>
       <Toaster />
     </div>

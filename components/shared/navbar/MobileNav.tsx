@@ -29,6 +29,7 @@ const NavContent = () => {
           <SheetClose asChild key={item.route}>
             <Link
               href={item.route}
+              aria-label={item.label}
               className={
                 'cursor-pointer bg-transparent text-5xl text-slate-200 hover:text-white'
               }

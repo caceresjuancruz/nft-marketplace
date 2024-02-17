@@ -5,6 +5,17 @@ export interface SidebarLink {
   label: string
 }
 
+export interface SocialLink {
+  iconUrl: string
+  link: string
+  alt: string
+}
+
+export interface FooterLink {
+  route: string
+  label: string
+}
+
 export interface ParamsProps {
   params: { lng: string }
 }
