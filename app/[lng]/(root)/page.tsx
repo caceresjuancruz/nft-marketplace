@@ -1,4 +1,4 @@
-export default function Home() {
+export default async function NftHome() {
   return (
     <section className='py-24'>
       <div className='container'>

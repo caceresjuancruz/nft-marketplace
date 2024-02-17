@@ -6,7 +6,7 @@ export interface SidebarLink {
 }
 
 export interface ParamsProps {
-  params: { id: string }
+  params: { lng: string }
 }
 
 export interface SearchParamsProps {
@@ -16,4 +16,9 @@ export interface SearchParamsProps {
 export interface URLProps {
   params: { id: string }
   searchParams: { [key: string]: string | undefined }
+}
+
+export interface LayoutProps {
+  params: { lng: string }
+  children: React.ReactNode
 }
