@@ -1,12 +1,6 @@
-import { FooterLink, SidebarLink, SocialLink } from '@/types'
+import { FooterLink, SidebarLink, SocialLink, Theme } from '@/types'
 
 export type ThemeMode = 'light' | 'dark' | 'system'
-
-interface Theme {
-  value: ThemeMode
-  label: string
-  icon: string
-}
 
 export const themes: Theme[] = [
   { value: 'light', label: 'Light', icon: '/assets/icons/sun.svg' },

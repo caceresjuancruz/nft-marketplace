@@ -33,3 +33,9 @@ export interface LayoutProps {
   params: { lng: string }
   children: React.ReactNode
 }
+
+export interface Theme {
+  value: ThemeMode
+  label: string
+  icon: string
+}

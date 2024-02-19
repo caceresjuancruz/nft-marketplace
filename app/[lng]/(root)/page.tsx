@@ -1,8 +1,10 @@
+import { Banner } from '@/components/index'
+
 export default async function NftHome() {
   return (
     <section className='py-24'>
       <div className='container'>
-        <h1 className='text-3xl font-bold'>Next TS Starter</h1>
+        <Banner />
       </div>
     </section>
   )
