@@ -10,8 +10,8 @@ const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false)
 
   useEffect(() => {
-    const speed = 150 // Ajusta la velocidad de escritura y borrado según tus preferencias
-    const delay = 1000 // Tiempo de espera antes de empezar a borrar
+    const speed = 150
+    const delay = 1000
 
     const handleTyping = () => {
       const currentText = words[currentWordIndex]

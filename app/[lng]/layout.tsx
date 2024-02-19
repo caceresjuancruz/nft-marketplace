@@ -20,6 +20,9 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/assets/favicon.ico'
+  },
   title: 'NFT Marketplace',
   applicationName: 'CryptoMarket',
   description: 'NFT Marketplace',
@@ -61,7 +64,7 @@ export default async function RootLayout({
 }: LayoutProps) {
   return (
     <html lang={lng} dir={dir(lng)}>
-      <body className={poppins.className}>
+      <body className={`${poppins.className} custom-scrollbar`}>
         <Providers>{children}</Providers>
         <Analytics />
         <SpeedInsights />
