@@ -6,6 +6,8 @@ import CreateButton from './shared/navbar/CreateButton'
 import Banner from './banner/Banner'
 import CreatorCard from './card/CreatorCard'
 import NftCard from './card/NftCard'
+import TopCreators from './TopCreators'
+import HotBids from './HotBids'
 
 export {
   Navbar,
@@ -15,5 +17,7 @@ export {
   CreateButton,
   Banner,
   CreatorCard,
-  NftCard
+  NftCard,
+  TopCreators,
+  HotBids
 }

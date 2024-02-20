@@ -16,10 +16,10 @@ const CreatorCard = ({
   rank
 }: CreatorCardProps) => {
   return (
-    <div className='w-full max-w-xs cursor-pointer rounded-xl border border-slate-500/50 shadow-xl backdrop-blur-3xl'>
+    <div className='w-full max-w-xs cursor-pointer rounded-3xl border border-slate-500/50 shadow-xl backdrop-blur-3xl hover:border-slate-400/50'>
       <div className='relative aspect-square overflow-hidden rounded-t-xl '>
         <div className='absolute inset-0 flex items-center justify-center p-6'>
-          <Avatar className='shadow-ring-dark h-24 w-24 border-4 border-white'>
+          <Avatar className='shadow-ring-dark h-24 w-24 border-4 border-white shadow-xl'>
             <AvatarImage alt='@definitelymeng' src='/placeholder-user.jpg' />
             <AvatarFallback>DM</AvatarFallback>
           </Avatar>

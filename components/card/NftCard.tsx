@@ -1,3 +1,4 @@
+import { formatAndDivideNumber, truncateString } from '@/lib/utils'
 import Image from 'next/image'
 
 interface NftCardProps {
@@ -9,10 +10,10 @@ interface NftCardProps {
 
 const NftCard = ({ image, title, likeCount, price }: NftCardProps) => {
   return (
-    <div className='relative h-[400px] w-[350px] cursor-pointer overflow-hidden rounded-3xl border border-slate-500/50 shadow'>
+    <div className='relative h-[20rem] w-[16rem] cursor-pointer overflow-hidden rounded-3xl border border-slate-500/50 shadow hover:border-slate-400/50'>
       <Image
         alt={title}
-        className='h-full w-full object-cover'
+        className='h-full w-full select-none object-cover'
         height={400}
         width={350}
         src={image}
@@ -24,11 +25,13 @@ const NftCard = ({ image, title, likeCount, price }: NftCardProps) => {
           src='/assets/icons/favourite.svg'
           width={20}
         />
-        <span className='text-white'>{likeCount}</span>
+        <span className='text-white'>{formatAndDivideNumber(likeCount)}</span>
       </div>
       <div className='absolute bottom-0 left-0 w-full p-4 '>
         <div className='rounded-2xl border border-slate-500/50 bg-slate-700/50 px-4 py-2 shadow backdrop-blur-sm'>
-          <h3 className='text-lg font-semibold text-white'>{title}</h3>
+          <h3 className='text-lg font-semibold text-white'>
+            {truncateString(title)}
+          </h3>
           <p className='text-gray-300'>Saskehh Rio</p>
           <p className='text-lg font-semibold text-white'>{price}ETH</p>
         </div>

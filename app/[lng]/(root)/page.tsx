@@ -1,5 +1,4 @@
-import TopCreators from '@/components/TopCreators'
-import { Banner, CreatorCard } from '@/components/index'
+import { Banner, TopCreators, HotBids } from '@/components/index'
 import { ParamsProps } from '@/types'
 import { Metadata } from 'next'
 
@@ -13,6 +12,7 @@ export default async function NftHome({ params: { lng } }: ParamsProps) {
       <div className='container'>
         <Banner />
         <TopCreators lng={lng} />
+        <HotBids lng={lng} />
       </div>
     </section>
   )
