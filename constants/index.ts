@@ -1,4 +1,5 @@
 import { FooterLink, SidebarLink, SocialLink, Theme } from '@/types'
+import { images } from './images'
 
 export type ThemeMode = 'light' | 'dark' | 'system'
 
@@ -28,22 +29,22 @@ export const sidebarLinks: SidebarLink[] = [
 
 export const socialLinks: SocialLink[] = [
   {
-    iconUrl: '/assets/icons/instagram.svg',
+    iconUrl: images.instagram,
     link: 'https://www.linkedin.com/in/caceresjuancruz/',
     alt: 'Instagram'
   },
   {
-    iconUrl: '/assets/icons/x.svg',
+    iconUrl: images.x,
     link: 'https://www.linkedin.com/in/caceresjuancruz/',
     alt: 'X Social'
   },
   {
-    iconUrl: '/assets/icons/telegram.svg',
+    iconUrl: images.telegram,
     link: 'https://www.linkedin.com/in/caceresjuancruz/',
     alt: 'Telegram'
   },
   {
-    iconUrl: '/assets/icons/discord.svg',
+    iconUrl: images.discord,
     link: 'https://www.linkedin.com/in/caceresjuancruz/',
     alt: 'Discord'
   }

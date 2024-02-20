@@ -17,8 +17,10 @@ const Footer = ({ lng }: FooterProps) => {
     <footer className='flexCenter flex-col py-16 sm:py-8'>
       <FooterInfo lng={lng} />
       <div className='flexCenter mt-5 w-full px-16 sm:px-4'>
-        <div className='flexBetween mt-7 w-full flex-row gap-4 sm:flex-col'>
-          <p>CryptoMarket, Inc. {t('rightsReserved')}.</p>
+        <div className='flexBetween xs:flexCenter mt-7 w-full flex-row gap-4 sm:flex-col'>
+          <p className='text-center'>
+            CryptoMarket, Inc. {t('rightsReserved')}.
+          </p>
           <div className='flex flex-row gap-3'>
             {socialLinks.map((item: SocialLink, index) => (
               <Link

@@ -1,5 +1,6 @@
 'use client'
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid'
+import { images } from '@/constants/images'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
@@ -37,14 +38,14 @@ const BannerCardContent = () => {
       initial='initial'
       animate='animate'
       whileHover='hover'
-      className='flex h-full min-h-[6rem] w-full flex-1 flex-row space-x-2'
+      className='flex h-full min-h-[6rem] w-full flex-1 select-none flex-row space-x-2'
     >
       <motion.div
         variants={first}
         className='flex h-full w-1/3 flex-col items-center justify-center'
       >
         <Image
-          src='/assets/images/nft1.jpg'
+          src={images.nft1}
           alt='Nft1'
           width={900}
           height={900}
@@ -54,7 +55,7 @@ const BannerCardContent = () => {
       </motion.div>
       <motion.div className='relative z-20 flex h-full w-1/3 flex-col items-center justify-center bg-transparent'>
         <Image
-          src='/assets/images/nft2.jpg'
+          src={images.nft2}
           alt='Nft2'
           width={900}
           height={900}
@@ -67,7 +68,7 @@ const BannerCardContent = () => {
         className='flex h-full w-1/3 flex-col items-center justify-center bg-transparent'
       >
         <Image
-          src='/assets/images/nft3.png'
+          src={images.nft3}
           alt='Nft3'
           width={900}
           height={900}

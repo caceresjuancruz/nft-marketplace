@@ -31,16 +31,18 @@ const FooterInfo = ({ lng }: FooterInfoProps) => {
         </div>
       </div>
 
-      <div className='flex flex-row items-start justify-start gap-24'>
+      <div className='flex flex-row items-start justify-start gap-24 xs:gap-12'>
         <div>
-          <h3 className='mb-5 text-xl font-semibold text-bone'>CryptoMarket</h3>
+          <h3 className='mb-5 text-xl font-semibold text-bone xs:text-sm'>
+            CryptoMarket
+          </h3>
           <div className='flex flex-col items-start gap-4 align-bottom'>
             {cryptoMarketFooterLinks.map((item, index) => (
               <Link
                 key={index}
                 href={item.route}
                 aria-label={item.label}
-                className='text-slate-300 hover:text-white'
+                className='text-slate-300 hover:text-white xs:text-sm'
               >
                 {t(`${item.label}`)}
               </Link>
@@ -48,7 +50,7 @@ const FooterInfo = ({ lng }: FooterInfoProps) => {
           </div>
         </div>
         <div>
-          <h3 className='mb-5 text-xl font-semibold text-bone'>
+          <h3 className='mb-5 text-xl font-semibold text-bone xs:text-sm'>
             {t('support')}
           </h3>
           <div className='flex flex-col items-start gap-4 align-bottom'>
@@ -57,7 +59,7 @@ const FooterInfo = ({ lng }: FooterInfoProps) => {
                 key={index}
                 href={item.route}
                 aria-label={item.label}
-                className='text-slate-300 hover:text-white'
+                className='text-slate-300 hover:text-white xs:text-sm'
               >
                 {t(`${item.label}`)}
               </Link>

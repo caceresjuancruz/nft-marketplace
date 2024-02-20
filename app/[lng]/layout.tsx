@@ -7,6 +7,7 @@ import { Providers } from './providers'
 import { dir } from 'i18next'
 import { languages } from '../i18n/settings'
 import { LayoutProps } from '@/types'
+import { images } from '@/constants/images'
 
 export async function generateStaticParams() {
   return languages.map(lng => ({ lng }))
@@ -21,7 +22,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/assets/favicon.ico'
+    icon: images.favicon
   },
   title: 'NFT Marketplace',
   applicationName: 'CryptoMarket',
