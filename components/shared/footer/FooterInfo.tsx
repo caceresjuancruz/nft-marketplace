@@ -34,7 +34,7 @@ const FooterInfo = ({ lng }: FooterInfoProps) => {
       <div className='flex flex-row items-start justify-start gap-24 xs:gap-12'>
         <div>
           <h3 className='mb-5 text-xl font-semibold text-bone xs:text-sm'>
-            CryptoMarket
+            Marketplace
           </h3>
           <div className='flex flex-col items-start gap-4 align-bottom'>
             {cryptoMarketFooterLinks.map((item, index) => (

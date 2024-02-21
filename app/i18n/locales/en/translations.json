@@ -14,5 +14,14 @@
   "legal": "Legal",
   "privacyPolicy": "Privacy Policy",
   "topCreators": "Top Creators",
-  "hotBids": "Hot Bids"
+  "hotBids": "Hot Bids",
+  "createNewItem": "Create new Item",
+  "uploadFile": "Upload File",
+  "name": "Name",
+  "enterItemName": "Enter item name",
+  "description": "Description",
+  "enterDescription": "Enter description",
+  "price": "Price",
+  "enterPrice": "Enter price",
+  "createItem": "Create Item"
 }
