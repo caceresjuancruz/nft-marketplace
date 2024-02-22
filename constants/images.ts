@@ -14,5 +14,6 @@ export const images = {
   x: '/assets/icons/x.svg',
   favicon: '/assets/favicon.ico',
   leftArrow: '/assets/icons/left-arrow.svg',
-  rightArrow: '/assets/icons/right-arrow.svg'
+  rightArrow: '/assets/icons/right-arrow.svg',
+  upload: '/assets/icons/upload.svg'
 }

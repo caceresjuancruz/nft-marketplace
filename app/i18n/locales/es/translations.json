@@ -23,5 +23,7 @@
   "enterDescription": "Ingrese la descripción",
   "price": "Precio",
   "enterPrice": "Ingrese el precio",
-  "createItem": "Crear Item"
+  "createItem": "Crear Item",
+  "dragAndDropFile": "Arrastre y suelte el archivo aquí",
+  "orBrowseMediaOnYourDevice": "o busque archivos en su dispositivo"
 }

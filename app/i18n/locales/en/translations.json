@@ -23,5 +23,7 @@
   "enterDescription": "Enter description",
   "price": "Price",
   "enterPrice": "Enter price",
-  "createItem": "Create Item"
+  "createItem": "Create Item",
+  "dragAndDropFile": "Drag and drop file",
+  "orBrowseMediaOnYourDevice": "or browse media on your device"
 }
